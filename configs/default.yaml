@@ -28,7 +28,7 @@ evaluation:
     - chair
 
 data:
-  mimic_cxr_path: "data"
+  mimic_cxr_path: "data/iu-xray"
   iu_xray_path: "data/iu-xray"
   max_report_length: 256
   image_size: 224
