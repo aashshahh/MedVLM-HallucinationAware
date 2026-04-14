@@ -1,0 +1,16 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+*.pt
+*.pth
+checkpoints/
+outputs/
+data/iu-xray/images/
+data/mimic-cxr/images/
+data/mimic-cxr/
+NLMCXR_*.tgz
+.DS_Store
+wandb/
+*.egg-info/

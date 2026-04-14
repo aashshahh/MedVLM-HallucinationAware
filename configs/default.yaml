@@ -1,0 +1,34 @@
+model:
+  vision_encoder: "openai/clip-vit-base-patch32"
+  llm_backbone: "Salesforce/blip-image-captioning-large"
+  lora_r: 16
+  lora_alpha: 32
+  lora_dropout: 0.05
+
+knowledge:
+  corpus_path: "data/knowledge_corpus.json"
+  top_k_retrieval: 10
+  top_k_purified: 5
+
+training:
+  batch_size: 2
+  gradient_accumulation: 8
+  learning_rate: 2.0e-4
+  warmup_ratio: 0.03
+  num_epochs: 1
+  epsilon: 0.4
+  max_steps: 500
+
+evaluation:
+  metrics:
+    - bleu1
+    - bleu4
+    - rouge_l
+    - meteor
+    - chair
+
+data:
+  mimic_cxr_path: "data"
+  iu_xray_path: "data/iu-xray"
+  max_report_length: 256
+  image_size: 224
