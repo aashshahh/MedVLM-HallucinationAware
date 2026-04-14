@@ -43,7 +43,7 @@ Vision-language models generate plausible-sounding radiology reports but frequen
 ---
 
 ## Pipeline
-"""
+
 
 IU-Xray chest X-ray
 │
@@ -66,7 +66,7 @@ Generated report
 ├──► Grad-CAM heatmap   (visual grounding overlay)
 ├──► ECE calibration    (model confidence under perturbation)
 └──► Correction pipeline (removes hallucinated sentences)
-"""
+
 ---
 
 ## Results (IU-Xray, 500 training steps)
@@ -88,7 +88,7 @@ Generated report
 ---
 
 ## Project structure
-"""
+
 ├── configs/default.yaml        # all hyperparameters
 ├── data/
 │   ├── dummy.py                # synthetic data generator
@@ -105,7 +105,7 @@ Generated report
 │   └── robustness.py           # degradation + ECE analysis
 ├── webapp/components/app.py    # Gradio demo
 └── tests/pipeline.py
-"""
+
 ---
 
 ## Quickstart
